@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Quiz Module</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body onload="Display()">
+    <!-- <body onload="Feedback()"> -->
+    <div class="bg-dark navB" id="Quiz">Quiz</div>
+    <div class="jumbotron hell">
+        <div class="border border-white rounded-top rounded-bottom dial" id="QA">
+            <h2></h2>
+            <h1></h1>
+            <input type="radio" value="A" id="A" onclick="myfun(this.value)" name="pass" class="disable">
+            <label for="A"></label><br>
+            <input type="radio" value="B" id="B" onclick="myfun(this.value)" name="pass" class="disable">
+            <label for="B"></label><br>
+            <input type="radio" value="C" id="C" onclick="myfun(this.value)" name="pass" class="disable">
+            <label for="C"></label><br>
+            <input type="radio" value="D" id="D" onclick="myfun(this.value)" name="pass" class="disable">
+            <label for="D"></label><br><br>
+            <span id="Feedback"></span><br><br><button class="btn btn-warning" onclick="master()" id="control">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
